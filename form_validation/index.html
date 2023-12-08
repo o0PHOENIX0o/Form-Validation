@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, compatibility, and viewport settings !!vs code default boilerplate code-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="form img.png">
+    <!-- title -->
+    <title>Form Validation</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+       <!-- Form element with onsubmit attribute calling validateForm() function -->
+        <!-- The function will return true or false, determining whether to submit the form or not -->
+        <form id="Form" name="myForm" onsubmit="return validateForm()">
+            <!-- Heading for the registration form -->
+            <h1>Registration</h1>
+            
+            <!-- Input control for Name with associated label and error div -->
+            <div class="input-control">
+                <label for="Name"><br>Name</br></label>
+                <input id="Name" name="fname" type="text">
+                <div class="error"></div>
+            </div>
+
+            <!-- Input control for Email with associated label and error div -->
+            <div class="input-control">
+                <label for="email"><br>Email</br></label>
+                <input id="Email" name="femail" type="text">
+                <div class="error"></div>
+            </div>
+            
+            <!-- Input control for Phone Number with associated label and error div -->
+            <div class="input-control">
+                <label for="phone"><br>Phone Number</br></label>
+                <input id="Phone" name="fphone" type="number">
+                <div class="error"></div>
+            </div>
+            
+            <!-- Input control for Password with associated label and error div -->
+            <div class="input-control">
+                <label for="password"><br>Password</br></label>
+                <input id="Password"name="fpassword" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <!-- Input control for Confirm Password with associated label and error div -->
+            <div class="input-control">
+                <label for="password2"><br>Confirm Password</br></label>
+                <input id="Password2" name="fpassword2" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <!-- Submit button for the form -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
